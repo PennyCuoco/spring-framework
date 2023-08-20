@@ -69,6 +69,10 @@ public class RequestEntity<T> extends HttpEntity<T> {
 	@Nullable
 	private final HttpMethod method;
 
+	// i learn something from rpc ,maybe i can add a rid for trace the hole software
+	@Nullable
+	private final String requestID;
+
 	@Nullable
 	private final URI url;
 
